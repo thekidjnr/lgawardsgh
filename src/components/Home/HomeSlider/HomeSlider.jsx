@@ -4,19 +4,19 @@ import icon from "./assets/icon.png";
 
 const HomeSlider = () => {
   return (
-    <div className=" bg-bg h-screen bg-cover">
-      <div className=" bg-bgColor h-screen bg-cover pb-[35px] ">
+    <div className=" bg-bg h-100vh bg-cover">
+      <div className=" bg-bgColor h-100vh bg-cover pb-[35px] relative">
         <Navbar />
-        <div className=" mt-[125px] text-center items-center justify-center ">
+        <div className=" mt-[160px] text-center items-center justify-center ">
           <h1 className=" text-lg font-Rossans text-[60px] font-normal leading-[81px] text-[#FFFFFF]  ">
             THIS IS
           </h1>
           <h1 className=" text-lg font-Rossans text-[60px] font-normal leading-[81px] text-[#FFFFFF]  ">
-            THE
+            THE &nbsp;
             <span className=" text-transparent  bg-clip-text bg-gradient-to-r from-[#F9C662] to-[#FFFFFF]">
               FIRST EDITION
             </span>
-            <span>OF THE</span>
+            <span>&nbsp; OF THE</span>
           </h1>
           <h1 className=" text-lg font-Rossans text-[60px] font-normal leading-[81px] text-[#FFFFFF]  ">
             ANNUAL LOTTERY AND GAMING AWARDS
@@ -28,9 +28,9 @@ const HomeSlider = () => {
           </p>
         </div>
         <div className=" w-full text-[-webkit-center] flex items-center justify-center justify-items-center">
-          <button className="flex mt-[36px] items-center  border p-4 rounded-[30px] ">
+          <button className="flex mt-[36px] items-center  border p-4 rounded-[30px] mb-[100px]">
             <img src={icon} alt="" />
-            <span className=" ml-[15px] text-[22px] font-normal font-Open Sans leading-[30px] text-transparent  bg-clip-text bg-gradient-to-r from-[#F9C662] to-[#FFFFFF]">
+            <span className=" ml-[15px]  text-[22px] font-normal font-Open Sans leading-[30px] text-transparent  bg-clip-text bg-gradient-to-r from-[#F9C662] to-[#FFFFFF]">
               Play Video
             </span>
           </button>

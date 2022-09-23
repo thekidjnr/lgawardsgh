@@ -8,10 +8,10 @@ import { AiOutlineInstagram, AiFillYoutube } from "react-icons/ai";
 export const ContactUs = () => {
   return (
     <div>
-      <div className=" bg-black h-100vh bg-cover pb-[150px] ">
+      <div className=" bg-black h-100vh bg-cover pb-[150px]">
         <Navbar />
-        <div className="flex justify-between">
-          <div className="mt-[97px] ml-[35px] text-white w-[693px]">
+        <div className="flex justify-between gap-5 section">
+          <div className="mt-[97px] text-white">
             <h1 className="font-Open Sans font-semibold text-[50px] leading-[68px] ">
               Contact Us
             </h1>

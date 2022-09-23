@@ -3,8 +3,8 @@ import { Navbar } from "../../Navbar/Navbar";
 import arrow from "./assets/arrow.png";
 const LotterySlider = () => {
   return (
-    <div className=" bg-game_bg h-screen bg-cover">
-      <div className=" bg-bgColor h-screen bg-cover pb-[35px] ">
+    <div className=" bg-game_bg h-100vh bg-cover">
+      <div className=" bg-bgColor h-100vh bg-cover pb-[35px] ">
         <Navbar />
         <div className=" mb-[42px] mt-[200px] text-center items-center justify-center flex flex-col ">
           <h1 className=" text-lg font-Rossans text-[80px] leading-[81px] text-[#FFFFFF]  ">
