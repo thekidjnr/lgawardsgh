@@ -1,67 +1,39 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { TitleData } from "../../Gaming/GamingData";
 export const GamingCategory = () => {
-  // const navigate = useNavigate();
-  // const gaming =()=>{
-  //   navigate("/gaming");
-  // }
   return (
-    <div className="bg-black pb-[64px]">
-      <div className=" bg-[#353535] h-[159px] text-center pt-[46px]">
-        <h1 className=" font-semibold font-Open Sans text-[50px] leading-[68px] text-white ">
+    <div className="bg-black lg:pb-[64px]">
+      <div className=" bg-[#353535] lg:py-[40px] text-center">
+        <h1 className=" font-semibold font-Open Sans lg:text-[50px] text-[20px] leading-[68px] text-white ">
           TOP GAMING CATEGORY
         </h1>
       </div>
-      <div className="section">
-        <div className=" bg-black h-100vh items-center justify-center pt-[108px] flex flex-wrap">
-          <div className="flex justify-around ml-[30px] mt-[29px]  ">
-            <div className=" w-[558px] h-[503px] bg-game align-bottom ">
-              <div className=" bg-item_bg h-[150px] mt-[356px] flex justify-center items-center ">
-                <h1 className="text-center text-white font-Open Sans font-bold text-[35px] leading-[38px] ">
-                  Sports Betting Application of <br />
-                  the Year
-                </h1>
+      <div className="section py-[40px] ">
+        <div className="grid grid-cols-2 gap-5 lg:gap-10 lg:mb-10 mb-5 ">
+          {TitleData.filter((title) => title.id <= 4).map((lotto) => {
+            return (
+              <div className="border-[0.5px]  overflow-hidden relative">
+                <img
+                  src={lotto.img}
+                  className="w-full hover:scale-110 transition duration-300"
+                  alt=""
+                />
+                <div className="absolute bottom-0 w-full lg:h-[100px] h-[50px] bg-black/75 text-white lg:px-14 lg:py-8 px-2 flex items-center">
+                  <h1 className="font-semibold lg:text-2xl lg:w-2/3 text-[10px] m-auto text-center">
+                    {lotto.title}
+                  </h1>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="flex justify-around ml-[30px] mt-[29px] ">
-            <div className=" w-[558px] h-[503px] bg-game align-bottom ">
-              <div className=" bg-item_bg h-[150px] mt-[356px] flex justify-center items-center ">
-                <h1 className="text-center text-white font-Open Sans font-bold text-[35px] leading-[38px] ">
-                  Casino Operator of <br />
-                  the Year
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-around ml-[30px] mt-[29px] ">
-            <div className=" w-[558px] h-[503px] bg-game align-bottom ">
-              <div className=" bg-item_bg h-[150px] mt-[356px] flex justify-center items-center ">
-                <h1 className="text-center text-white font-Open Sans font-bold text-[35px] leading-[38px] ">
-                  Best Customer Service <br />
-                  Company of the Year
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-around ml-[30px] mt-[29px]  ">
-            <div className=" w-[558px] h-[503px] bg-game align-bottom ">
-              <div className=" bg-item_bg h-[150px] mt-[356px] flex justify-center items-center ">
-                <h1 className="text-center text-white font-Open Sans font-bold text-[35px] leading-[38px] ">
-                  Emerging Sports Betting <br />
-                  Company
-                </h1>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
-
         <Link
           to="/gaming"
-          className=" cursor-pointer mt-[39px] justify-end flex mr-[80px] "
+          className=" cursor-pointer mt-[39px] justify-end flex items-center gap-2 "
         >
-          <h1 className="text-white mr-[25px] font-semibold font-Open Sans text-[22px] leading-[30px] ">
+          <h1 className="text-white font-medium lg:font-semibold font-Open Sans lg:text-[22px]">
             Explore all
           </h1>
           <BsArrowRight

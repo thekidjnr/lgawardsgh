@@ -8,55 +8,54 @@ import { AiOutlineInstagram, AiFillYoutube } from "react-icons/ai";
 export const ContactUs = () => {
   return (
     <div>
-      <div className=" bg-black h-100vh bg-cover pb-[150px]">
-        <Navbar />
-        <div className="flex justify-between gap-5 section">
+      <div className=" bg-black h-100vh bg-cover pb-[150px] pt-[20px] -mt-[100px]">
+        <div className="lg:flex justify-between gap-5 section">
           <div className="mt-[97px] text-white">
-            <h1 className="font-Open Sans font-semibold text-[50px] leading-[68px] ">
+            <h1 className="font-Open Sans font-semibold text-[30px] text-center lg:text-left lg:text-[50px] leading-[68px] ">
               Contact Us
             </h1>
-            <p className="text-[#CBCBCB] font-light text-[24px] leading-[33px]">
+            <p className="text-[#CBCBCB] font-light text-[18px] text-center lg:text-left lg:w-full lg:text-[24px] lg:leading-[33px]">
               Kindly fill this form to reach out to us with your feedback and
               responses.
             </p>
-            <div className="flex mt-[32px] justify-between">
-              <div>
-                <h1 className=" text-[28px] leading-[36px] text-white">
+            <div className="lg:flex gap-5  mt-[32px] w-full">
+              <div className="mb-6 lg:w-1/2">
+                <h1 className=" text-[22px] leading-[36px] text-white">
                   First Name
                 </h1>
                 <input
                   type="text"
-                  className=" mt-[6px] border-white rounded-[6px] border text-[28px] leading-[36px] text-white bg-black w-[334px] h-[64px] pl-[5px]"
+                  className=" mt-[6px] border-white rounded-[6px] border text-[22px] leading-[36px] text-white bg-black w-full p-3"
                 />
               </div>
-              <div>
-                <h1 className=" text-[28px] leading-[36px] text-white">
+              <div className="lg:w-1/2">
+                <h1 className=" text-[22px] leading-[36px] text-white">
                   Last Name
                 </h1>
                 <input
                   type="text"
-                  className=" mt-[6px] border-white rounded-[6px] border text-[28px] leading-[36px] text-white bg-black w-[334px] h-[64px] pl-[5px]"
+                  className=" mt-[6px] border-white rounded-[6px] border text-[22px] leading-[36px] text-white bg-black w-full p-3"
                 />
               </div>
             </div>
             <div className=" mt-[24px] ">
-              <h1 className=" text-[28px] leading-[36px] text-white">Email</h1>
+              <h1 className=" text-[22px] leading-[36px] text-white">Email</h1>
               <input
                 type="email"
-                className=" mt-[6px] border-white rounded-[6px] border text-[28px] leading-[36px] text-white bg-black w-full h-[64px] pl-[5px]"
+                className=" mt-[6px] border-white rounded-[6px] border text-[22px] leading-[36px] text-white bg-black w-full h-[64px] pl-[5px]"
               />
             </div>
             <div className=" mt-[24px] ">
-              <h1 className=" text-[28px] leading-[36px] text-white">
+              <h1 className=" text-[22px] leading-[36px] text-white">
                 Phone Number
               </h1>
               <input
                 type="number"
-                className=" mt-[6px] border-white rounded-[6px] border text-[28px] leading-[36px] text-white bg-black w-full h-[64px] pl-[5px]"
+                className=" mt-[6px] border-white rounded-[6px] border text-[22px] leading-[36px] text-white bg-black w-full h-[64px] pl-[5px]"
               />
             </div>
             <div className=" mt-[42px] ">
-              <h1 className=" text-[28px] leading-[36px] text-white">
+              <h1 className=" text-[22px] leading-[36px] text-white">
                 Message
               </h1>
               <textarea
@@ -69,36 +68,37 @@ export const ContactUs = () => {
               Send Message
             </button>
           </div>
-          <div className=" bg-left w-[552px] mt-[90px] "></div>
+          <div className=" lg:bg-left w-[552px] mt-[90px] "></div>
         </div>
         <div className=" justify-center text-center text-white mt-[138px] ">
-          <h1 className=" font-Open Sans font-semibold text-[24px] leading-[33px] ">
+          <h1 className=" font-Open Sans lg:font-semibold text-lg  lg:text-[24px] leading-[15px] lg:leading-[33px] ">
             Contact Us Directly
           </h1>
-          <h1 className=" font-Open Sans font-semibold text-[50px] leading-[68px] ">
+          <h1 className=" font-Open Sans font-semibold text-[25px] lg:text-[50px] leading-[30px] lg:leading-[68px] ">
             We’d love to hear from you
           </h1>
-          <h1 className=" font-Open Sans font-semibold text-[24px] leading-[33px] ">
+          <h1 className=" font-Open Sans lg:font-semibold lg:text-[24px] leading-[33px] ">
             Chat with our friendly team directly
           </h1>
         </div>
-        <div className="flex justify-evenly mt-[59px]">
+        <div className="flex flex-col gap-10 lg:flex-row justify-evenly mt-[30px] lg:mt-[59px]">
           <div className="text-white text-center justify-center items-center flex flex-col ">
-            <div className=" w-[46px] bg-white text-center rounded-[9px] justify-center py-[6px] px-[6px]">
-              <MdOutlineEmail
-                color="black"
-                className=" w-[36.67px] h-[29.33px] "
-              />
+            <div className=" bg-white text-center rounded-[9px] justify-center py-[6px] px-[6px]">
+              <MdOutlineEmail color="black" className=" " size={30} />
             </div>
             <h1 className="font-Open Sans font-semibold text-[24px] leading-[33px]">
               Email Us
             </h1>
-            <h1 className="font-Open San text-[18px] leading-[25px]">
+            <h1 className="font-Open Sans font-light lg:font-normal text-[18px] leading-[25px]">
               Reach out to us via email:
             </h1>
-            <h1 className="font-Open Sans font-semibold text-[16px] leading-[22px]">
+            <a
+              href=""
+              type="email"
+              className="font-Open Sans font-semibold text-[16px] leading-[22px] active:font-bold"
+            >
               lgawardsgh@gmail.com
-            </h1>
+            </a>
           </div>
           <div className="text-white text-center justify-center items-center flex flex-col ">
             <div className=" w-[46px] bg-white text-center rounded-[9px] justify-center py-[6px] px-[6px]">
@@ -112,10 +112,10 @@ export const ContactUs = () => {
             <h1 className="font-Open Sans font-semibold text-[24px] leading-[33px]">
               Visit Us
             </h1>
-            <h1 className="font-Open San text-[18px] leading-[25px]">
+            <h1 className="font-Open Sans font-light lg:font-normal text-[18px] leading-[25px]">
               Visit our office HQ:
             </h1>
-            <h1 className="font-Open Sans font-semibold text-[16px] leading-[22px]">
+            <h1 className="font-Open Sans font-semibold text-[16px] leading-[22px] active:font-bold">
               National Lottery HQ, Accra
             </h1>
           </div>
@@ -129,16 +129,16 @@ export const ContactUs = () => {
             <h1 className="font-Open Sans font-semibold text-[24px] leading-[33px]">
               Call Us
             </h1>
-            <h1 className="font-Open San text-[18px] leading-[25px]">
+            <h1 className="font-Open Sans font-light lg:font-normal text-[18px] leading-[25px]">
               Mon-Fri from 8am to 5pm
             </h1>
-            <h1 className="font-Open Sans font-semibold text-[16px] leading-[22px]">
+            <h1 className="font-Open Sans font-semibold text-[16px] leading-[22px] active:font-bold">
               +233 18 000 0000
             </h1>
           </div>
         </div>
       </div>
-      <div className="bg-[#353535] h-[223px] pt-[63px] ">
+      <div className="bg-[#353535] h-full py-[20px] ">
         <div className="flex flex-col justify-center text-center">
           <div className="flex justify-center">
             <ImFacebook2
@@ -158,13 +158,13 @@ export const ContactUs = () => {
               className="w-[30px] h-[30px] cursor-pointer "
             />
           </div>
-          <h1 className="mt-[21px] text-[#CBCBCB]  font-semibold text-[18px] leading-[30px] ">
+          <h1 className="mt-[21px] text-[#CBCBCB]  lg:font-light lg:leading-[30px] ">
             ALL RIGHTS RESERVED
           </h1>
-          <h1 className="text-[#CBCBCB]  font-semibold text-[18px] leading-[30px] ">
-            {" "}
-            NATIONAL LOTTERY AUTHORITY, ACCRA-GHANA | 2022
+          <h1 className="text-[#CBCBCB]  font-bold text-[18px] lg:leading-[30px] ">
+            NATIONAL LOTTERY AUTHORITY
           </h1>
+          <span className="font-light text-[#CBCBCB]">ACCRA-GHANA | 2022</span>
         </div>
       </div>
     </div>

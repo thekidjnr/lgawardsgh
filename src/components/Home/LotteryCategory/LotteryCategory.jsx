@@ -10,14 +10,14 @@ export const LotteryCategory = () => {
   };
   return (
     <div>
-      <div className=" bg-[#353535] h-[159px] text-center pt-[46px]">
-        <h1 className=" font-semibold font-Open Sans text-[50px] leading-[68px] text-white ">
+      <div className=" bg-[#353535] lg:py-[40px] text-center ">
+        <h1 className=" font-semibold font-Open Sans lg:text-[50px] text-[20px] leading-[68px] text-white ">
           TOP LOTTERY CATEGORIES
         </h1>
       </div>
-      <div className=" bg-black h-100vh pt-[108px] pb-[94px]">
+      <div className=" bg-black h-100vh py-[40px]">
         <div className="section">
-          <div className="grid grid-cols-2 gap-10 mb-10 ">
+          <div className="grid grid-cols-2 gap-5 lg:gap-10 lg:mb-10 mb-5 ">
             {TitleData.filter((title) => title.id <= 2).map((lotto) => {
               return (
                 <div className="border-[0.5px]  overflow-hidden relative">
@@ -26,8 +26,8 @@ export const LotteryCategory = () => {
                     className="w-full hover:scale-110 transition duration-300"
                     alt=""
                   />
-                  <div className="absolute bottom-0 w-full bg-black/75 text-white px-14 py-8">
-                    <h1 className="font-semibold text-3xl w-2/3 m-auto text-center">
+                  <div className="absolute bottom-0 w-full bg-black/75 text-white lg:px-14 lg:py-8 py-2 px-2">
+                    <h1 className="font-semibold lg:text-3xl lg:w-2/3 text-[10px] m-auto text-center">
                       {lotto.title}
                     </h1>
                   </div>
@@ -35,7 +35,7 @@ export const LotteryCategory = () => {
               );
             })}
           </div>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid lg:grid-cols-3 grid-cols-2 gap-5 ">
             {TitleData.filter((title) => 3 <= title.id).map((lotto) => {
               return (
                 <div className="border-[0.5px] overflow-hidden relative">
@@ -44,8 +44,8 @@ export const LotteryCategory = () => {
                     alt=""
                     className="w-full hover:scale-110 transition duration-300"
                   />
-                  <div className="absolute bottom-0 w-full h-[100px] bg-black/75 text-white px-10 flex items-center">
-                    <h1 className="font-semibold text-2xl m-auto text-center">
+                  <div className="absolute bottom-0 w-full lg:h-[100px] h-[50px] bg-black/75 text-white lg:px-14 lg:py-8 px-2 flex items-center">
+                    <h1 className="font-semibold lg:text-3xl lg:w-2/3 text-[10px] m-auto text-center">
                       {lotto.title}
                     </h1>
                   </div>
@@ -54,10 +54,10 @@ export const LotteryCategory = () => {
             })}
           </div>
           <div
-            className=" cursor-pointer mt-[39px] justify-end flex mr-[80px] "
+            className=" cursor-pointer mt-[39px] justify-end flex items-center gap-2 "
             onClick={lottery}
           >
-            <h1 className="text-white mr-[25px] font-semibold font-Open Sans text-[22px] leading-[30px] ">
+            <h1 className="text-white font-medium lg:font-semibold font-Open Sans lg:text-[22px]">
               Explore all
             </h1>
             <BsArrowRight
