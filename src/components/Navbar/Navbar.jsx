@@ -42,11 +42,22 @@ export const Navbar = () => {
               <Link to="/gaming" className="active:font-bold transition">
                 GAMING
               </Link>
-              <Link className="active:font-bold transition">LOTTERY</Link>
-              <Link className="active:font-bold transition">HONOREES</Link>
-              <Link className="active:font-bold transition">MEDIA</Link>
-              <Link className="active:font-bold transition">ABOUT</Link>
-              <Link className="mt-4 text-xl font-medium rounded-[30px] border-2 py-6 px-8 active:font-bold transition">
+              <Link to="/lottery" className="active:font-bold transition">
+                LOTTERY
+              </Link>
+              <Link to="/honorees" className="active:font-bold transition">
+                HONOREES
+              </Link>
+              <Link to="/media" className="active:font-bold transition">
+                MEDIA
+              </Link>
+              <Link to="/about" className="active:font-bold transition">
+                ABOUT
+              </Link>
+              <Link
+                to="/contact"
+                className="mt-4 text-xl font-medium rounded-[30px] border-2 py-6 px-8 active:font-bold transition"
+              >
                 CONTACT US
               </Link>
             </div>
@@ -55,13 +66,9 @@ export const Navbar = () => {
       )}
       <div className=" lg:flex lg:items-center lg:justify-between section lg:block hidden ">
         <ul className=" ml-[35px] font-light text-[20px] flex justify-between gap-10 text-[#FFFFFF] font-Open Sans cursor-pointer  ">
-          <li className=" " onClick={gaming}>
-            GAMING
-          </li>
-          <li className="" onClick={lottery}>
-            LOTTERY
-          </li>
-          <li className="">HONOREES</li>
+          <Link to="/gaming">GAMING</Link>
+          <Link to="/lottery">LOTTERY</Link>
+          <Link to="/honorees">HONOREES</Link>
         </ul>
         <div
           className=" font-semibold text-[30px] font-Open Sans text-[#FFFFFF] "
@@ -70,11 +77,9 @@ export const Navbar = () => {
           LOGO
         </div>
         <ul className=" font-Open Sans text-[#FFFFFF] mr-[35px] font-light text-[20px] flex gap-10 justify-between cursor-pointer">
-          <li className="">MEDIA</li>
-          <li className=" ">ABOUT</li>
-          <li className=" " onClick={contact}>
-            CONTACT US
-          </li>
+          <Link to="/media">MEDIA</Link>
+          <Link to="/about">ABOUT</Link>
+          <Link to="/contact">CONTACT US</Link>
         </ul>
       </div>
     </div>

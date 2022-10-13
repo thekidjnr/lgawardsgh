@@ -25,8 +25,7 @@ export const Footer = () => {
               <p className=" text-white text-justify">
                 By clicking subscribe, I agree to receive newsletters,
                 marketing, updates, special offers (including partner offers),
-                and other information from BET and the Paramount family of
-                companies.
+                and other information from LGAwards Ghana.
               </p>
             </div>
             <button className="w-full rounded-[3px] h-[66px] bg-white text-center py-[17px] mb-[183px] mt-[32px] text-[#818181] font-semibold text-[22px] leading-[33px] font-Poppins ">

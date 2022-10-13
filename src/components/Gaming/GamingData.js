@@ -10,10 +10,12 @@ export const TitleData = [
       {
         id: 1,
         name: "Michael Odjidja",
+        img: Game,
       },
       {
         id: 2,
         name: "Fidelius Kwame",
+        img: Game,
       },
     ],
   },
@@ -25,10 +27,12 @@ export const TitleData = [
       {
         id: 1,
         name: "Michael Odjidja",
+        img: Game,
       },
       {
         id: 2,
         name: "Fidelius Kwame",
+        img: Game,
       },
     ],
   },
@@ -40,10 +44,12 @@ export const TitleData = [
       {
         id: 1,
         name: "Michael Odjidja",
+        img: Game,
       },
       {
         id: 2,
         name: "Fidelius Kwame",
+        img: Game,
       },
     ],
   },
@@ -55,10 +61,22 @@ export const TitleData = [
       {
         id: 1,
         name: "Michael Odjidja",
+        img: Game,
       },
       {
         id: 2,
         name: "Fidelius Kwame",
+        img: Game,
+      },
+      {
+        id: 3,
+        name: "Michael Odjidja",
+        img: Game,
+      },
+      {
+        id: 4,
+        name: "Fidelius Kwame",
+        img: Game,
       },
     ],
   },
@@ -70,10 +88,12 @@ export const TitleData = [
       {
         id: 1,
         name: "Michael Odjidja",
+        img: Game,
       },
       {
         id: 2,
         name: "Fidelius Kwame",
+        img: Game,
       },
     ],
   },

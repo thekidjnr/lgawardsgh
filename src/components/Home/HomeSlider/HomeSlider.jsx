@@ -1,5 +1,4 @@
 import React from "react";
-import { Navbar } from "../../Navbar/Navbar";
 import icon from "./assets/icon.png";
 
 const HomeSlider = () => {
